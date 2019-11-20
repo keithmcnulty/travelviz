@@ -28,7 +28,7 @@ get_geo_distance = function(long1, lat1, long2, lat2, units = "miles") {
   distance
 }
 
-# get anita travel data
+# get travel data
 
 travel_stops <- read.csv("travel.csv")
 
