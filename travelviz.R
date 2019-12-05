@@ -32,7 +32,7 @@ get_geo_distance = function(long1, lat1, long2, lat2, units = "miles") {
 
 travel_stops <- read.csv("travel.csv")
 
-# map world cloropleths and join to anita file
+# map world cloropleths and join to travel_stops
 
 world_map <- rnaturalearth::ne_download(category = "cultural", returnclass = "sf", type = "map_units") %>% 
   st_transform(crs = 4326) %>% 
